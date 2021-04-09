@@ -9,4 +9,4 @@
 > gulp build
 
 
-https://allfreelance.github.io/portfolio/
+https://allfreelance.github.io/portfolio/app
