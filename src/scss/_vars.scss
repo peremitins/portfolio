@@ -1,0 +1,289 @@
+$red: #ec1839;
+$green: rgb(0, 114, 0);
+$blue: rgb(24, 8, 245);
+$pink: rgb(245, 8, 206);
+$orange: #9e7502;
+
+//body-dark
+.main.dark .section {
+  background-color: #151515;
+}
+.main.dark .aside,
+.main.dark .service__item-inner {
+  background-color: #222222;
+}
+.main.dark h1,
+.main.dark h3,
+.main.dark h4,
+.main.dark h5,
+.main.dark .aside__item-link,
+.main.dark .aside__logo-link,
+.main.dark .section-title,
+.main.dark .form__input-data label {
+  color: #fff;
+}
+.main.dark p,
+.main.dark p span,
+.main.dark .about__benefits-skills span {
+  color: #e9e9e9;
+}
+.main.dark .about__benefits-item svg {
+  fill: #e9e9e9;
+}
+.main.dark .form__input-data input,
+.form__textarea textarea,
+.main.dark .form__textarea textarea {
+  border-bottom: 2px solid #e9e9e9;
+}
+.main.dark .main__aside {
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5), -3px -3px 7px rgba(0, 0, 0, 0.5);
+}
+.main.dark .about__benefits-item {
+  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.1), 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.main.dark .about__benefits-skills span {
+  box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1), inset 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.main.dark .color {
+  box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1), inset 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.main.dark .portfolio__item {
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+.main.dark .portfolio__item-inner {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+.main.dark .portfolio__info-link {
+  color: #fff;
+}
+//color-theme
+body {
+  .aside__logo-link::before {
+    border-top: 4px solid $red;
+    border-left: 4px solid $red;
+  }
+  .aside__logo-link::after {
+    border-bottom: 4px solid $red;
+    border-right: 4px solid $red;
+  }
+  .main.dark .aside__item-link:hover,
+  .main.dark .aside__item-link.active,
+  .aside__item-link:hover,
+  .aside__item-link.active,
+  .about__text-title span,
+  .service__item-icon .fa,
+  .portfolio__info-icon .fa,
+  .contacts__info-icon .fa,
+  .form__input-data input:focus ~ label,
+  .form__textarea textarea:focus ~ label,
+  .form__input-data input:valid ~ label,
+  .form__textarea textarea:valid ~ label,
+  .main.dark .form__input-data input:focus ~ label,
+  .main.dark .form__textarea textarea:focus ~ label,
+  .main.dark .form__input-data input:valid ~ label,
+  .main.dark .form__textarea textarea:valid ~ label {
+    color: $red;
+  }
+  .intro__social-link,
+  .section-title::before,
+  .section-title::after,
+  .buttons__btn,
+  .service__item-inner:hover .service__item-icon,
+  .form__underline:before,
+  .home__social-link,
+  ::-webkit-scrollbar-thumb {
+    background-color: $red;
+  }
+  .about__skills-item {
+    border: 1px solid $red;
+  }
+  .about__benefits-item svg,
+  .main.dark .about__benefits-item svg {
+    fill: $red;
+  }
+}
+//green
+body.green {
+  .aside__logo-link::before {
+    border-top: 4px solid $green;
+    border-left: 4px solid $green;
+  }
+  .aside__logo-link::after {
+    border-bottom: 4px solid $green;
+    border-right: 4px solid $green;
+  }
+  .main.dark .aside__item-link:hover,
+  .main.dark .aside__item-link.active,
+  .aside__item-link:hover,
+  .aside__item-link.active,
+  .about__text-title span,
+  .service__item-icon .fa,
+  .portfolio__info-icon .fa,
+  .contacts__info-icon .fa,
+  .form__input-data input:focus ~ label,
+  .form__textarea textarea:focus ~ label,
+  .form__input-data input:valid ~ label,
+  .form__textarea textarea:valid ~ label,
+  .main.dark .form__input-data input:focus ~ label,
+  .main.dark .form__textarea textarea:focus ~ label,
+  .main.dark .form__input-data input:valid ~ label,
+  .main.dark .form__textarea textarea:valid ~ label {
+    color: $green;
+  }
+  .intro__social-link,
+  .section-title::before,
+  .section-title::after,
+  .buttons__btn,
+  .service__item-inner:hover .service__item-icon,
+  .form__underline:before,
+  .home__social-link,
+  ::-webkit-scrollbar-thumb {
+    background-color: $green;
+  }
+  .about__skills-item {
+    border: 1px solid $green;
+  }
+  .about__benefits-item svg,
+  .main.dark .about__benefits-item svg {
+    fill: $green;
+  }
+}
+//blue
+body.blue {
+  .aside__logo-link::before {
+    border-top: 4px solid $blue;
+    border-left: 4px solid $blue;
+  }
+  .aside__logo-link::after {
+    border-bottom: 4px solid $blue;
+    border-right: 4px solid $blue;
+  }
+  .main.dark .aside__item-link:hover,
+  .main.dark .aside__item-link.active,
+  .aside__item-link:hover,
+  .aside__item-link.active,
+  .about__text-title span,
+  .service__item-icon .fa,
+  .portfolio__info-icon .fa,
+  .contacts__info-icon .fa,
+  .form__input-data input:focus ~ label,
+  .form__textarea textarea:focus ~ label,
+  .form__input-data input:valid ~ label,
+  .form__textarea textarea:valid ~ label,
+  .main.dark .form__input-data input:focus ~ label,
+  .main.dark .form__textarea textarea:focus ~ label,
+  .main.dark .form__input-data input:valid ~ label,
+  .main.dark .form__textarea textarea:valid ~ label {
+    color: $blue;
+  }
+  .intro__social-link,
+  .section-title::before,
+  .section-title::after,
+  .buttons__btn,
+  .service__item-inner:hover .service__item-icon,
+  .form__underline:before,
+  .home__social-link,
+  ::-webkit-scrollbar-thumb {
+    background-color: $blue;
+  }
+  .about__skills-item {
+    border: 1px solid $blue;
+  }
+  .about__benefits-item svg,
+  .main.dark .about__benefits-item svg {
+    fill: $blue;
+  }
+}
+//pink
+body.pink {
+  .aside__logo-link::before {
+    border-top: 4px solid $pink;
+    border-left: 4px solid $pink;
+  }
+  .aside__logo-link::after {
+    border-bottom: 4px solid $pink;
+    border-right: 4px solid $pink;
+  }
+  .main.dark .aside__item-link:hover,
+  .main.dark .aside__item-link.active,
+  .aside__item-link:hover,
+  .aside__item-link.active,
+  .about__text-title span,
+  .service__item-icon .fa,
+  .portfolio__info-icon .fa,
+  .contacts__info-icon .fa,
+  .form__input-data input:focus ~ label,
+  .form__textarea textarea:focus ~ label,
+  .form__input-data input:valid ~ label,
+  .form__textarea textarea:valid ~ label,
+  .main.dark .form__input-data input:focus ~ label,
+  .main.dark .form__textarea textarea:focus ~ label,
+  .main.dark .form__input-data input:valid ~ label,
+  .main.dark .form__textarea textarea:valid ~ label {
+    color: $pink;
+  }
+  .intro__social-link,
+  .section-title::before,
+  .section-title::after,
+  .buttons__btn,
+  .service__item-inner:hover .service__item-icon,
+  .form__underline:before,
+  .home__social-link,
+  ::-webkit-scrollbar-thumb {
+    background-color: $pink;
+  }
+  .about__skills-item {
+    border: 1px solid $pink;
+  }
+  .about__benefits-item svg,
+  .main.dark .about__benefits-item svg {
+    fill: $pink;
+  }
+}
+//orange
+body.orange {
+  .aside__logo-link::before {
+    border-top: 4px solid $orange;
+    border-left: 4px solid $orange;
+  }
+  .aside__logo-link::after {
+    border-bottom: 4px solid $orange;
+    border-right: 4px solid $orange;
+  }
+  .main.dark .aside__item-link:hover,
+  .main.dark .aside__item-link.active,
+  .aside__item-link:hover,
+  .aside__item-link.active,
+  .about__text-title span,
+  .service__item-icon .fa,
+  .portfolio__info-icon .fa,
+  .contacts__info-icon .fa,
+  .form__input-data input:focus ~ label,
+  .form__textarea textarea:focus ~ label,
+  .form__input-data input:valid ~ label,
+  .form__textarea textarea:valid ~ label,
+  .main.dark .form__input-data input:focus ~ label,
+  .main.dark .form__textarea textarea:focus ~ label,
+  .main.dark .form__input-data input:valid ~ label,
+  .main.dark .form__textarea textarea:valid ~ label {
+    color: $orange;
+  }
+  .intro__social-link,
+  .section-title::before,
+  .section-title::after,
+  .buttons__btn,
+  .service__item-inner:hover .service__item-icon,
+  .form__underline:before,
+  .home__social-link,
+  ::-webkit-scrollbar-thumb {
+    background-color: $orange;
+  }
+  .about__skills-item {
+    border: 1px solid $orange;
+  }
+  .about__benefits-item svg,
+  .main.dark .about__benefits-item svg {
+    fill: $orange;
+  }
+}

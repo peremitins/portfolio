@@ -1,0 +1,73 @@
+.color {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 11px;
+  right: -206px;
+  transition: all 0.3s ease-in;
+  padding: 0 10px;
+  border-radius: 20px;
+  height: 37px;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  z-index: 2;
+  &.active {
+    right: 10px;
+  }
+  .fa {
+    font-size: 26px;
+    margin-right: 16px;
+    cursor: pointer;
+    color: #7b7b7b;
+  }
+  &__themes {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    align-items: center;
+    padding: 0 5px;
+  }
+  &__theme {
+    position: relative;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    margin-right: 10px;
+    will-change: transform;
+  	backface-visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.15);
+    }
+    &:nth-child(1) {
+      background-color: $red;
+    }
+    &:nth-child(2) {
+      background-color: $blue;
+    }
+    &:nth-child(3) {
+      background-color: $green;
+    }
+    &:nth-child(4) {
+      background-color: $pink;
+    }
+    &:nth-child(5) {
+      position: relative;
+      background-color: $orange;
+    }
+  }
+  &__theme-dark {
+    transform: translateY(0);
+    transition: all 0.3s ease-in;
+    margin-left: 9px;
+    &.active {
+      transform: translateY(-147%);
+    }
+
+    img {
+      margin-bottom: 3px;
+    }
+  }
+}

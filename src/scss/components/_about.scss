@@ -1,0 +1,152 @@
+.about {
+
+  &__title {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  &__content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  &__text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  &__text-title {
+    font-size: 24px;
+    color: #302e4d;
+    margin-bottom: 15px;
+  }
+  &__text-description {
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+  }
+  &__personal {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  &__personal-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  &__personal-item p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #302e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #e8dfec;
+    margin: 0;
+  }
+  &__personal-item p span {
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+  }
+  &__education {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  &__education-title {
+    margin-bottom: 10px;
+  }
+  &__education-date {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  &__benefits {
+    
+  }
+  &__benefits-title {
+    margin-bottom: 10px;
+  }
+  &__benefits-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    span {
+      display: inline-flex;
+      padding: 10px;
+      text-align: center;
+      border-radius: 40px;
+      transition: background-color .3s ease, color .3s ease;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__benefits-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__benefits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 32%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    &:first-child svg {
+      margin-left: -30px;
+    }
+    svg {
+      margin-bottom: 10px;
+      width: 100px;
+      height: auto;
+    }
+  }
+  &__benefits-item-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  &__benefits-item-rocket {
+    animation: rocket .15s infinite;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: translate(2px, 1px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(2px, 1px);
+  }
+}
+
+.buttons {
+  margin-top: 30px;
+  &__btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    will-change: transform;
+  	backface-visibility: hidden;
+    transition: all .3s ease;
+    white-space: nowrap;
+    margin-right: 15px;
+    margin-top: 10px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
