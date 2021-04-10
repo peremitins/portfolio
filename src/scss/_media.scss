@@ -24,12 +24,18 @@
     transform: none;
     opacity: 0;
   }
+  .lightbox__controls-prev, .lightbox__controls-next {
+    top: auto;
+    bottom: 3%;
+  }
+  .lightbox__content {
+    width: 100%;
+  }
+  .portfolio__item {
+    margin: 10px 15px;
+  }
 }
 @media (max-width: 991px) {
-  .service__item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
   .aside {
     display: flex;
     align-items: center;
@@ -82,7 +88,7 @@
   }
   .section {
     left: 0;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
   .aside__item-link .fa {
     margin-right: 0;
@@ -91,7 +97,6 @@
 }
 @media (max-width: 767px) {
   .about__education,
-  .service__item,
   .portfolio__item,
   .about__personal-item {
     flex: 0 0 100%;
@@ -104,7 +109,7 @@
     margin-bottom: 30px;
   }
   .section {
-    padding: 0 15px 60px;
+    padding: 0 15px 120px;
   }
   h2 {
     font-size: 36px;
@@ -112,14 +117,13 @@
   .section-title {
     margin-bottom: 40px;
   }
-  
-  .service__item {
-    margin-bottom: 0;
-  }
   .color {
     right: -215px;
   }
   .color.active {
     right: 3px;
+  }
+  .about__benefits-item {
+    flex: 0 0 100%;
   }
 }

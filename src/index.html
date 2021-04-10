@@ -11,12 +11,19 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/vendor.css">
   <script src="https://use.fontawesome.com/ea51c9dc9f.js"></script>
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
   <div class="preloader">
     <div class="preloader__loader"></div>
   </div>
+  <!-- <select class="change-lang">
+    <option value="ru">Ru</option>
+    <option value="en" selected>En</option>
+  </select> -->
+  <label><input class="change-lang" type="checkbox">lang</label>
   <main class="main">
     <div class="main__aside aside">
       <div class="aside__logo">
@@ -27,19 +34,16 @@
       </div>
       <ul class="aside__items">
         <li class="aside__item">
-          <a href="#home" class="aside__item-link active"><i class="fa fa-home"></i>Главная</a>
+          <a href="#home" class="aside__item-link active lng-menu-main" data-lang="home"><i class="fa fa-home"></i>Главная</a>
         </li>
         <li class="aside__item">
-          <a href="#about" class="aside__item-link"><i class="fa fa-user"></i>Обо мне</a>
+          <a href="#about" class="aside__item-link lng-menu-about" data-lang="user"><i class="fa fa-user"></i>Обо мне</a>
         </li>
         <li class="aside__item">
-          <a href="#service" class="aside__item-link"><i class="fa fa-list"></i>Услуги</a>
+          <a href="#portfolio" class="aside__item-link lng-menu-portfolio" data-lang="briefcase"><i class="fa fa-briefcase"></i>Портфолио</a>
         </li>
         <li class="aside__item">
-          <a href="#portfolio" class="aside__item-link"><i class="fa fa-briefcase"></i>Портфолио</a>
-        </li>
-        <li class="aside__item">
-          <a href="#contacts" class="aside__item-link"><i class="fa fa-comments"></i>Контакты</a>
+          <a href="#contacts" class="aside__item-link lng-menu-contacts" data-lang="comments"><i class="fa fa-comments"></i>Контакты</a>
         </li>
       </ul>
       <div class="aside__copyright">
@@ -53,7 +57,7 @@
             <div class="home__image-wrapper">
               <img class="home__image shadow-dark" src="img/profile.jpg" alt="profile">
             </div>
-            <h1 class="home__title">Николай Перемитин</h1>
+            <h1 class="home__title lng-name">Николай Перемитин</h1>
             <p class="home__description">Веб-разработчик</p>
             <div class="home__social">
               <a href="#/" class="home__social-link"><i class="fa fa-twitter"></i></a>
@@ -77,12 +81,7 @@
               <div class="row">
                 <div class="about__text padd-15">
                   <h3 class="about__text-title">Я Николай - <span>веб-разработчик!</span></h3>
-                  <p class="about__text-description">После окончания университета в 2005 году, я оказался в сфере
-                    торговли и услуг где и оставался до 2019 года, пока не решил, что нужно что-то менять и начать
-                    заниматься тем, что мне действительно нравится и доставляет удовольствие с самого детства. Мне
-                    нравится творить, создавать и видеть результат прямо сейчас!<br>С 2019 года я начал активно изучать
-                    Front-end, сначала верстку затем Javascript и фреймворк Vue.js.<br>В работе особое внимание уделяю
-                    деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным!</p>
+                  <p class="about__text-description">В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится творить, создавать и видеть результат прямо сейчас!<br>В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным!</p>
                 </div>
               </div>
               <div class="row">
@@ -161,42 +160,6 @@
         </div>
       </section>
 
-      <section class="service section" id="service">
-        <div class="container">
-          <div class="row">
-            <div class="service__title section-title padd-15">
-              <h2>Услуги</h2>
-            </div>
-          </div>
-          <div class="row center">
-            <div class="service__item padd-15">
-              <div class="service__item-inner shadow-dark">
-                <div class="service__item-icon"><i class="fa fa-laptop"></i></div>
-                <h4 class="service__item-title">Web Design</h4>
-                <p class="service__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Recusandae, natus!</p>
-              </div>
-            </div>
-            <div class="service__item padd-15">
-              <div class="service__item-inner shadow-dark">
-                <div class="service__item-icon"><i class="fa fa-photo"></i></div>
-                <h4 class="service__item-title">Web Design</h4>
-                <p class="service__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Recusandae, natus!</p>
-              </div>
-            </div>
-            <div class="service__item padd-15">
-              <div class="service__item-inner shadow-dark">
-                <div class="service__item-icon"><i class="fa fa-code"></i></div>
-                <h4 class="service__item-title">Web Design</h4>
-                <p class="service__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Recusandae, natus!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="portfolio section" id="portfolio">
         <div class="container">
           <div class="row">
@@ -212,13 +175,28 @@
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">DP</h4>
-                  <p class="portfolio__info-description">Lororem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium delectuem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sed.</p>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100.</p>
                   <div class="portfolio__info-icon">
                     <i class="fa fa-search"></i>
                   </div>
                 </div>
               </div>
-              <a class="portfolio__info-link" href="http://testmailnew.mcdir.ru/" target="_blank">Перейти на сайт</a>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/dp/app/" target="_blank">Перейти на сайт</a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/landbox.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Landbox</h4>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, CSS/SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Сложная верстка с использованием большого количества svg-элементов. Зеленая зона Google PageSpeed</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/landbox/app/" target="_blank">Перейти на сайт</a>
             </div>
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
@@ -227,15 +205,14 @@
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Groom</h4>
-                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript, PHP.
-                    Легкий и быстрый сайт в зеленой зоне Google PageSpeed. В работе применял БЭМ методологию, с
-                    соблюдением семантики.</p>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с
+                    соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.</p>
                   <div class="portfolio__info-icon">
                     <i class="fa fa-search"></i>
                   </div>
                 </div>
               </div>
-              <a class="portfolio__info-link" href="http://groom.mcdir.ru/" target="_blank">Перейти на сайт</a>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/groom/app/" target="_blank">Перейти на сайт</a>
             </div>
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
@@ -244,13 +221,43 @@
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Tasty</h4>
-                  <p class="portfolio__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium delectus saepe illum expedita repellat praesentium placeat repudiandae accusamus neque.</p>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления. </p>
                   <div class="portfolio__info-icon">
                     <i class="fa fa-search"></i>
                   </div>
                 </div>
               </div>
-              <a class="portfolio__info-link" href="https://allfreelance.github.io/tasty/" target="_blank">Перейти на сайт</a>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/tasty/dist/" target="_blank">Перейти на сайт</a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/voyager.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Voyager</h4>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. Легкий и быстрый сайт c приятной анимацией. Зеленая зона Google PageSpeed.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/voyager/" target="_blank">Перейти на сайт</a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/find.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">FindFace</h4>
+                  <p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed. </p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link" href="https://allfreelance.github.io/findface/" target="_blank">Перейти на сайт</a>
             </div>
           </div>
         </div>
@@ -353,8 +360,7 @@
     </div>
   </div>
 
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+  
 </body>
 
 </html>

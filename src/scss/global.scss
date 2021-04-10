@@ -5,7 +5,6 @@
 @import "./components/aside";
 @import "./components/home";
 @import "./components/about";
-@import "./components/service";
 @import "./components/portfolio";
 @import "./components/lightbox";
 @import "./components/contacts";
@@ -16,7 +15,6 @@
 .section {
   min-height: 100vh;
   background-color: #f2f2fc;
-  background-color: #E6E7EE;
   padding: 0 30px;
   position: relative;
   left: 270px;
@@ -162,6 +160,17 @@
 ::-webkit-scrollbar-thumb {
   background: rgba(187, 15, 255, 0.993);
   border-radius: 10px
+}
+
+label {
+  display: flex;
+  position: relative;
+  z-index: 100;
+}
+
+.change-lang {
+  position: relative;
+  z-index: 100;
 }
 
 @import "./media";

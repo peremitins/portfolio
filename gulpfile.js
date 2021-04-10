@@ -60,8 +60,8 @@ const stylesBackend = () => {
 };
 
 const scripts = () => {
-	src('./src/js/vendor/**.js')
-		.pipe(concat('vendor.js'))
+	src('./src/js/lang.js')
+		.pipe(concat('lang.js'))
 		.pipe(gulpif(isProd, uglify().on("error", notify.onError())))
 		.pipe(dest('./app/js/'))
   return src(
@@ -74,14 +74,14 @@ const scripts = () => {
     .pipe(browserSync.stream());
 }
 
-const scriptsBackend = () => {
-	src('./src/js/vendor/**.js')
-    .pipe(concat('vendor.js'))
-    .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
-		.pipe(dest('./app/js/'))
-	return src(['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
-    .pipe(dest('./app/js'))
-};
+// const scriptsBackend = () => {
+// 	src('./src/js/vendor/**.js')
+//     .pipe(concat('vendor.js'))
+//     .pipe(gulpif(isProd, uglify().on("error", notify.onError())))
+// 		.pipe(dest('./app/js/'))
+// 	return src(['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
+//     .pipe(dest('./app/js'))
+// };
 
 const resources = () => {
   return src('./src/resources/**')
@@ -180,4 +180,4 @@ exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, i
 
 exports.cache = series(cache, rewrite);
 
-exports.backend = series(toProd, clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, imagesSvg, svgSprites);
+exports.backend = series(toProd, clean, htmlInclude, stylesBackend, resources, images, imagesSvg, svgSprites);

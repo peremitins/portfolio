@@ -23,14 +23,33 @@ themeBtnIcon.addEventListener('click', () => {
   themeBtn.classList.toggle('active');
 })
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (localStorage.getItem('mode') === 'dark') {
+    main.classList.add('dark');
+  } else {
+    main.classList.remove('dark');
+  }
+})
 themeDark.addEventListener('click', () => {
   themeDark.classList.toggle('active');
   main.classList.toggle('dark');
+  if (main.classList.contains('dark')) {
+    localStorage.setItem('mode', 'dark');
+  } else {
+    localStorage.setItem('mode', '');
+  }
 })
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (localStorage.getItem('colorThemes')) {
+    body.classList.add(localStorage.getItem('colorThemes'));
+  }
+})
 function changeTheme(color) {
   body.className = '';
   body.classList.add(color);
+  localStorage.setItem('colorThemes', body.className);
 }
 
 
@@ -71,7 +90,7 @@ function changeItem() {
   lightboxDescription.innerHTML = portfolioItems[count].querySelector('p').innerHTML;
   lightboxCounter.innerHTML = `${count + 1} из ${portfolioItems.length}`;
   console.log(portfolioItems[count].querySelector('a').getAttribute('href'));
-  
+
 }
 
 lightboxNext.addEventListener('click', () => {
@@ -115,46 +134,46 @@ lightbox.addEventListener('click', (e) => {
 
 //linkMenu & moveSection
 
-  const menuLink = document.querySelectorAll('.aside__item-link');
-  const menuItem = document.querySelectorAll('.aside__item');
-  const section = document.querySelectorAll('.section');
-  section.forEach(item => {
-    item.classList.add('fixed');
-  })
-  for (let i = 0;i < menuLink.length;i++) {
-    menuLink[i].addEventListener('click', function () {
-      removeBackSectionClass();
-      for (let k = 0;k < menuLink.length;k++) {
-        if (menuItem[k].querySelector('a').classList.contains('active')) {
-          addBackSectionClass(k);
-        }
-        menuLink[k].classList.remove('active');
+const menuLink = document.querySelectorAll('.aside__item-link');
+const menuItem = document.querySelectorAll('.aside__item');
+const section = document.querySelectorAll('.section');
+section.forEach(item => {
+  item.classList.add('fixed');
+})
+for (let i = 0;i < menuLink.length;i++) {
+  menuLink[i].addEventListener('click', function () {
+    removeBackSectionClass();
+    for (let k = 0;k < menuLink.length;k++) {
+      if (menuItem[k].querySelector('a').classList.contains('active')) {
+        addBackSectionClass(k);
       }
-      this.classList.add('active');
+      menuLink[k].classList.remove('active');
+    }
+    this.classList.add('active');
 
-      showSection(this);
+    showSection(this);
 
-    })
-  }
-  function removeBackSectionClass() {
-    section.forEach(item => {
-      item.classList.remove('back-section');
-    })
-  }
-  function addBackSectionClass(num) {
-    section[num].classList.add('back-section');
-  }
-  function showSection(element) {
+  })
+}
+function removeBackSectionClass() {
+  section.forEach(item => {
+    item.classList.remove('back-section');
+  })
+}
+function addBackSectionClass(num) {
+  section[num].classList.add('back-section');
+}
+function showSection(element) {
 
-    let href = element.getAttribute('href').split('#')[1];
+  let href = element.getAttribute('href').split('#')[1];
 
-    section.forEach(item => {
-      item.classList.remove('active');
-    })
+  section.forEach(item => {
+    item.classList.remove('active');
+  })
 
-    document.querySelector("#" + href).classList.add('active');
+  document.querySelector("#" + href).classList.add('active');
 
-  }
+}
 
 
 //hireMe
@@ -175,5 +194,26 @@ document.querySelector('.hire-me').addEventListener('click', function () {
   removeBackSectionClass();
   addBackSectionClass(sectionIndex);
 })
+
+
+//changeLanguage
+
+const selectLang = document.querySelector('.change-lang');
+
+let lang = selectLang.checked;
+
+selectLang.addEventListener('change', changeLang);
+
+function changeLang() {
+  for (let key in langArr) {
+    let icon = document.querySelector('.lng-' + key).getAttribute('data-lang');
+    if (selectLang.checked) {
+      document.querySelector('.lng-' + key).innerHTML = `<i class="fa fa-${icon}"></i> ${langArr[key]['en']}`;
+    } else {
+      document.querySelector('.lng-' + key).innerHTML = `<i class="fa fa-${icon}"></i> ${langArr[key]['ru']}`;
+    }
+  }
+}
+
 
 
