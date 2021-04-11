@@ -1,4 +1,372 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>New site</title><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/vendor.css"><script src="https://use.fontawesome.com/ea51c9dc9f.js"></script><script src="js/lang.js" defer="defer"></script><script src="js/main.js" defer="defer"></script></head><body><div class="preloader"><div class="preloader__loader"></div></div><!-- <select class="change-lang">
-    <option value="ru">Ru</option>
-    <option value="en" selected>En</option>
-  </select> --> <label><input class="change-lang" type="checkbox">lang</label><main class="main"><div class="main__aside aside"><div class="aside__logo"><a href="#/" class="aside__logo-link">WebDev</a></div><div class="aside__toggle"><span></span></div><ul class="aside__items"><li class="aside__item"><a href="#home" class="aside__item-link active lng-menu-main" data-lang="home"><i class="fa fa-home"></i>Главная</a></li><li class="aside__item"><a href="#about" class="aside__item-link lng-menu-about" data-lang="user"><i class="fa fa-user"></i>Обо мне</a></li><li class="aside__item"><a href="#portfolio" class="aside__item-link lng-menu-portfolio" data-lang="briefcase"><i class="fa fa-briefcase"></i>Портфолио</a></li><li class="aside__item"><a href="#contacts" class="aside__item-link lng-menu-contacts" data-lang="comments"><i class="fa fa-comments"></i>Контакты</a></li></ul><div class="aside__copyright">&copy; WebDev "Idea", 2021</div></div><div class="main__content"><section class="home section active" id="home"><div class="container"><div class="home__intro"><div class="home__image-wrapper"><img class="home__image shadow-dark" src="img/profile.jpg" alt="profile"></div><h1 class="home__title lng-name">Николай Перемитин</h1><p class="home__description">Веб-разработчик</p><div class="home__social"><a href="#/" class="home__social-link"><i class="fa fa-twitter"></i></a> <a href="#/" class="home__social-link"><i class="fa fa-facebook"></i></a> <a href="#/" class="home__social-link"><i class="fa fa-instagram"></i></a> <a href="#/" class="home__social-link"><i class="fa fa-linkedin"></i></a></div></div></div></section><section class="about section" id="about"><div class="container"><div class="row"><div class="about__title section-title padd-15"><h2 class="about__title-text">Обо мне</h2></div></div><div class="row"><div class="about__content padd-15"><div class="row"><div class="about__text padd-15"><h3 class="about__text-title">Я Николай - <span>веб-разработчик!</span></h3><p class="about__text-description">В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится творить, создавать и видеть результат прямо сейчас!<br>В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным!</p></div></div><div class="row"><div class="about__personal padd-15"><div class="row"><div class="about__personal-item padd-15"><p>День рождения : <span>6 июля 1983</span></p></div><div class="about__personal-item padd-15"><p>Email : <span>peremitinns@gmail.com</span></p></div><div class="about__personal-item padd-15"><p>Телефон : <span>7-909-545-28-69</span></p></div><div class="about__personal-item padd-15"><p>Город : <span>Краснодар</span></p></div></div></div><div class="row"><div class="buttons padd-15"><a href="#contacts" data-section-index="1" class="buttons__btn hire-me">Оставить заявку</a></div></div></div><div class="row"><div class="about__education padd-15"><h3 class="about__education-title">Образование</h3><p class="about__education-date">2000 - 2005 гг.</p><p class="about__education-description">Томский Государственный Педагогический Университет.</p><p class="about__education-description">Физико-математический факультет.</p><p class="about__education-description">Специальность: информатика-математика.</p></div></div></div><div class="about__benefits padd-15"><h3 class="about__benefits-title">Навыки и умения</h3><div class="about__benefits-skills"><span>HTML</span> <span>CSS/SCSS</span> <span>Javascript</span> <span>Bootstrap</span> <span>Vue.js</span> <span>Git</span> <span>Gulp</span> <span>HTML</span></div><ul class="about__benefits-items"><li class="about__benefits-item"><svg><use xlink:href="img/sprite.svg#stopwatch"></use></svg><h5 class="about__benefits-item-title">Быстрый</h5><p class="about__benefits-item-description">Моя первоочередная задача - сделать быструю загрузку веб-сайта и мгновенное взаимодействие с контентом</p></li><li class="about__benefits-item"><svg><use xlink:href="img/sprite.svg#mobile"></use></svg><h5 class="about__benefits-item-title">Отзывчивый/адаптивный</h5><p class="about__benefits-item-description">Мои веб-сайты будут работать на любом устройстве, любой диагонали.</p></li><li class="about__benefits-item"><svg class="about__benefits-item-rocket"><use xlink:href="img/sprite.svg#rocket"></use></svg><h5 class="about__benefits-item-title">Динамический</h5><p class="about__benefits-item-description">Веб-сайты не обязательно должны быть статичными, я смогу оживить любую страницу.</p></li></ul></div></div></div></section><section class="portfolio section" id="portfolio"><div class="container"><div class="row"><div class="portfolio__title section-title padd-15"><h2>Портфолио</h2></div></div><div class="portfolio__items center"><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/dp.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">DP</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100.</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/dp/app/" target="_blank">Перейти на сайт</a></div><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/landbox.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">Landbox</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, CSS/SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Сложная верстка с использованием большого количества svg-элементов. Зеленая зона Google PageSpeed</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/landbox/app/" target="_blank">Перейти на сайт</a></div><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/groom.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">Groom</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/groom/app/" target="_blank">Перейти на сайт</a></div><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/tasty.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">Tasty</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления.</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/tasty/dist/" target="_blank">Перейти на сайт</a></div><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/voyager.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">Voyager</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. Легкий и быстрый сайт c приятной анимацией. Зеленая зона Google PageSpeed.</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/voyager/" target="_blank">Перейти на сайт</a></div><div class="portfolio__item"><div class="portfolio__item-inner"><div class="portfolio__img"><img src="img/porfolio/find.jpg" alt="portfolio"></div><div class="portfolio__info"><h4 class="portfolio__info-title">FindFace</h4><p class="portfolio__info-description">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.</p><div class="portfolio__info-icon"><i class="fa fa-search"></i></div></div></div><a class="portfolio__info-link" href="https://allfreelance.github.io/findface/" target="_blank">Перейти на сайт</a></div></div></div></section><section class="contacts section" id="contacts"><div class="container"><div class="row"><div class="contacts__title section-title padd-15"><h2>Контакты</h2></div></div><div class="row"><div class="contacts__info-item padd-15"><div class="contacts__info-icon"><i class="fa fa-phone"></i></div><h4 class="contacts__info-title">Телефон</h4><p class="contacts__info-text">+7-909-545-28-69</p></div><div class="contacts__info-item padd-15"><div class="contacts__info-icon"><i class="fa fa-map-marker"></i></div><h4 class="contacts__info-title">Местоположение</h4><p class="contacts__info-text">Россия, г. Краснодар</p></div><div class="contacts__info-item padd-15"><div class="contacts__info-icon"><i class="fa fa-envelope"></i></div><h4 class="contacts__info-title">Email</h4><p class="contacts__info-text">peremitinns@gmail.com</p></div></div><div class="row"><form action="#" class="form"><div class="form__row"><div class="form__input-data"><input type="text" required><div class="form__underline"></div><label for="">Имя</label></div></div><div class="form__row"><div class="form__input-data"><input type="text" required><div class="form__underline"></div><label for="">Email</label></div></div><div class="form__row"><div class="form__input-data form__textarea"><textarea rows="8" cols="80" required></textarea><div class="form__underline"></div><label for="">Ваше сообщение</label><div class="buttons"><a href="#/" class="buttons__btn">Отправить</a></div></div></div></form></div></div></section></div><!-- colorStyle --><div class="color"><i class="fa fa-cog"></i><ul class="color__themes"><li class="color__theme theme-red" onclick="changeTheme('red')"></li><li class="color__theme theme-blue" onclick="changeTheme('blue')"></li><li class="color__theme theme-green" onclick="changeTheme('green')"></li><li class="color__theme theme-pink" onclick="changeTheme('pink')"></li><li class="color__theme theme-orange" onclick="changeTheme('orange')"></li><li class="color__theme color__theme-dark"><img src="img/moon.svg" alt="moon"> <img src="img/sun.svg" alt="sun"></li></ul></div></main><!-- Lightbox --><div class="lightbox"><div class="lightbox__content"><div class="lightbox__close">&times</div><img src="img/porfolio/tasty.jpg" alt="" class="lightbox__img"><div class="lightbox__caption"><div class="lightbox__text"><a href="" class="lightbox__title" target="_blank"></a><div class="lightbox__description"></div></div><div class="lightbox__counter"></div></div></div><div class="lightbox__controls"><div class="lightbox__controls-prev"><i class="fa fa-angle-left"></i></div><div class="lightbox__controls-next"><i class="fa fa-angle-right"></i></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <script src="https://use.fontawesome.com/ea51c9dc9f.js"></script>
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader__loader"></div>
+  </div>
+  <div class="toggle toggle--text">
+    <input type="checkbox" id="toggle--text" class="toggle--checkbox change-lang">
+    <label class="toggle--btn" for="toggle--text" data-label-on="Ru" data-label-off="En"></label>
+  </div>
+  <main class="main">
+    <div class="main__aside aside">
+      <div class="aside__logo">
+        <a href="#/" class="aside__logo-link">WebDev</a>
+      </div>
+      <div class="aside__toggle">
+        <span></span>
+      </div>
+      <ul class="aside__items">
+        <li class="aside__item">
+          <a href="#home" class="aside__item-link active lng-menu-main">Главная</a>
+          <i class="fa fa-home"></i>
+        </li>
+        <li class="aside__item">
+          <a href="#about" class="aside__item-link lng-menu-about">Обо мне</a>
+          <i class="fa fa-user"></i>
+        </li>
+        <li class="aside__item">
+          <a href="#portfolio" class="aside__item-link lng-menu-portfolio">Портфолио</a>
+          <i class="fa fa-briefcase"></i>
+        </li>
+        <li class="aside__item">
+          <a href="#contacts" class="aside__item-link lng-menu-contacts">Контакты</a>
+          <i class="fa fa-comments"></i>
+        </li>
+      </ul>
+      <div class="aside__copyright">
+        &copy; WebDev "Idea", 2021
+      </div>
+    </div>
+    <div class="main__content">
+      <section class="home section active" id="home">
+        <div class="container">
+          <div class="home__intro">
+            <div class="home__image-wrapper">
+              <img class="home__image shadow-dark" src="img/profile.jpg" alt="profile">
+            </div>
+            <h1 class="home__title lng-name">Николай Перемитин</h1>
+            <p class="home__description lng-position">Веб-разработчик</p>
+            <div class="home__social">
+              <a href="#/" class="home__social-link"><i class="fa fa-twitter"></i></a>
+              <a href="#/" class="home__social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#/" class="home__social-link"><i class="fa fa-instagram"></i></a>
+              <a href="#/" class="home__social-link"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about__title section-title padd-15">
+              <h2 class="about__title-text lng-about-title">Обо мне</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about__content padd-15">
+              <div class="row">
+                <div class="about__text padd-15">
+                  <p class="about__text-description lng-about-description">В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится творить, создавать и видеть результат прямо сейчас!<br>В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным!</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about__personal padd-15">
+                  <div class="row">
+                    <div class="about__personal-item padd-15">
+                      <p class="lng-about-data-birth">День рождения :</p>
+                      <span class="lng-about-data-birthday">6 июля 1983</span>
+                    </div>
+                    <div class="about__personal-item padd-15">
+                      <p>Email :</p>
+                      <span>peremitinns@gmail.com</span>
+                    </div>
+                    <div class="about__personal-item padd-15">
+                      <p class="lng-about-data-tel">Тел :</p>
+                      <span>7-909-545-28-69</span>
+                    </div>
+                    <div class="about__personal-item padd-15">
+                      <p class="lng-about-data-city">Местоположение :</p>
+                      <span class="lng-about-data-location">Россия, г. Краснодар</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="buttons padd-15">
+                    <a href="#contacts" data-section-index="1" class="buttons__btn hire-me lng-about-data-hire">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about__education padd-15">
+                  <h3 class="about__education-title lng-about-data-education">Образование</h3>
+                  <p class="about__education-date">2000 - 2005</p>
+                  <p class="about__education-description lng-about-data-university">Томский Государственный Педагогический Университет.</p>
+                  <p class="about__education-description lng-about-data-faculty">Физико-математический факультет.</p>
+                  <p class="about__education-description lng-about-data-speciality">Специальность: информатика-математика.</p>
+                </div>
+              </div>
+            </div>
+            <div class="about__benefits padd-15">
+              <h3 class="about__benefits-title lng-about-data-skills">Навыки и умения</h3>
+              <div class="about__benefits-skills">
+                <span>HTML</span>
+                <span>CSS/SCSS</span>
+                <span>Javascript</span>
+                <span>Bootstrap</span>
+                <span>Vue.js</span>
+                <span>Git</span>
+                <span>Gulp</span>
+                <span>HTML</span>
+              </div>
+              <ul class="about__benefits-items">
+                <li class="about__benefits-item">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#stopwatch"></use>
+                  </svg>
+                  <h5 class="about__benefits-item-title lng-about-data-fast">Быстрый</h5>
+                  <p class="about__benefits-item-description lng-about-data-fast-description">Моя первоочередная задача - сделать быструю загрузку
+                    веб-сайта и мгновенное взаимодействие с контентом.</p>
+                </li>
+                <li class="about__benefits-item">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#mobile"></use>
+                  </svg>
+                  <h5 class="about__benefits-item-title lng-about-data-responsive">Отзывчивый / адаптивный</h5>
+                  <p class="about__benefits-item-description lng-about-data-responsive-description">Мои веб-сайты будут работать на любом устройстве, любой
+                    диагонали.</p>
+                </li>
+                <li class="about__benefits-item">
+                  <svg class="about__benefits-item-rocket">
+                    <use xlink:href="img/sprite.svg#rocket"></use>
+                  </svg>
+                  <h5 class="about__benefits-item-title lng-about-data-animated">Анимированный</h5>
+                  <p class="about__benefits-item-description lng-about-data-animated-description">Веб-сайты не обязательно должны быть статичными, я смогу
+                    оживить любую страницу.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="portfolio__title section-title padd-15">
+              <h2 class="lng-about-data-portfolio">Портфолио</h2>
+            </div>
+          </div>
+          <div class="portfolio__items center">
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/dp.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">DP</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-1">Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/dp/app/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/landbox.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Landbox</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-2">Верстка лендинга с использованием HTML, CSS/SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Сложная верстка с использованием большого количества svg-элементов. Зеленая зона Google PageSpeed.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/landbox/app/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/groom.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Groom</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-3">Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с
+                    соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/groom/app/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/tasty.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Tasty</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-4">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления. </p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/tasty/dist/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/voyager.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Voyager</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-5">Верстка лендинга с использованием HTML, SASS, Javascript. Легкий и быстрый сайт c приятной анимацией. Зеленая зона Google PageSpeed.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/voyager/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/find.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">FindFace</h4>
+                  <p class="portfolio__info-description lng-about-data-portfolio-6">Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed. </p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/findface/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts section" id="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="contacts__title section-title padd-15">
+              <h2 class="lng-about-data-contacts">Контакты</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contacts__info-item padd-15">
+              <div class="contacts__info-icon"><i class="fa fa-phone"></i></div>
+              <h4 class="contacts__info-title lng-about-data-contacts-tel">Телефон</h4>
+              <p class="contacts__info-text">+7-909-545-28-69</p>
+            </div>
+            <div class="contacts__info-item padd-15">
+              <div class="contacts__info-icon"><i class="fa fa-map-marker"></i></div>
+              <h4 class="contacts__info-title lng-about-data-contacts-location">Местоположение</h4>
+              <p class="contacts__info-text lng-about-data-contacts-city">Россия, г. Краснодар</p>
+            </div>
+            <div class="contacts__info-item padd-15">
+              <div class="contacts__info-icon"><i class="fa fa-envelope"></i></div>
+              <h4 class="contacts__info-title">Email</h4>
+              <p class="contacts__info-text">peremitinns@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <form action="#" class="form">
+              <div class="form__row">
+                <div class="form__input-data">
+                  <input type="text" required>
+                  <div class="form__underline">
+                  </div>
+                  <label class="lng-about-data-contacts-name" for="">Имя</label>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__input-data">
+                  <input type="text" required>
+                  <div class="form__underline">
+                  </div>
+                  <label for="">Email</label>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__input-data form__textarea">
+                  <textarea rows="8" cols="80" required></textarea>
+                  <div class="form__underline">
+                  </div>
+                  <label class="lng-about-data-contacts-message" for="">Ваше сообщение</label>
+                  <div class="buttons">
+                    <a href="#/" class="buttons__btn lng-about-data-contacts-btn">Отправить</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- colorStyle -->
+    <div class="color">
+      <i class="fa fa-cog"></i>
+      <ul class="color__themes">
+        <li class="color__theme theme-red" onclick="changeTheme('red')"></li>
+        <li class="color__theme theme-blue" onclick="changeTheme('blue')"></li>
+        <li class="color__theme theme-green" onclick="changeTheme('green')"></li>
+        <li class="color__theme theme-pink" onclick="changeTheme('pink')"></li>
+        <li class="color__theme theme-orange" onclick="changeTheme('orange')"></li>
+        <li class="color__theme color__theme-dark">
+          <img src="img/moon.svg" alt="moon">
+          <img src="img/sun.svg" alt="sun">
+        </li>
+      </ul>
+    </div>
+  </main>
+
+
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox__content">
+      <div class="lightbox__close">&times</div>
+      <img src="img/porfolio/tasty.jpg" alt="" class="lightbox__img">
+      <div class="lightbox__caption">
+        <div class="lightbox__text">
+          <a href="" class="lightbox__title" target="_blank"></a>
+          <div class="lightbox__description"></div>
+        </div>
+        <div class="lightbox__counter"></div>
+      </div>
+    </div>
+    <div class="lightbox__controls">
+      <div class="lightbox__controls-prev"><i class="fa fa-angle-left"></i></div>
+      <div class="lightbox__controls-next"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

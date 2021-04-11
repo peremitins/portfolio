@@ -11,7 +11,6 @@
 @import "./components/form";
 @import "./components/color";
 
-
 .section {
   min-height: 100vh;
   background-color: #f2f2fc;
@@ -25,7 +24,7 @@
   opacity: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .fixed {
   position: fixed;
@@ -87,7 +86,7 @@
   top: 0;
   z-index: 10;
   background-color: #fdf9ff;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,.25), 3px 3px 7px rgba(255,255,255,1);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25), 3px 3px 7px rgba(255, 255, 255, 1);
 }
 .section-title {
   font-size: 40px;
@@ -152,25 +151,81 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
- 
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.541);
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: rgba(187, 15, 255, 0.993);
-  border-radius: 10px
+  border-radius: 10px;
 }
 
-label {
-  display: flex;
-  position: relative;
-  z-index: 100;
-}
+//checkboxLang
 
 .change-lang {
   position: relative;
   z-index: 100;
+}
+
+$toggle-borderColor: #8c8c8c;
+$toggle-shadowColor: #999;
+
+$inactiveTextColor: #999;
+
+.toggle {
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+.toggle--checkbox {
+  visibility: hidden;
+}
+.toggle--text {
+  .toggle--btn {
+    display: block;
+    position: relative;
+    width: 65px;
+    height: 29px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 40px;
+    border: 1px solid $toggle-borderColor;
+    border-right: 2px solid $toggle-borderColor;
+    cursor: pointer;
+    z-index: 100;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:before {
+      content: attr(data-label-on);
+      left: 15%;
+      color: $red;
+    }
+    &:after {
+      content: attr(data-label-off);
+      right: 15%;
+      color: $inactiveTextColor;
+    }
+  }
+  .toggle--checkbox:checked {
+    & + .toggle--btn {
+      border-left: 2px solid $toggle-borderColor;
+      border-right: 1px solid $toggle-borderColor;
+      &:before {
+        color: $inactiveTextColor;
+      }
+      &:after {
+        color: $red;
+      }
+    }
+  }
 }
 
 @import "./media";

@@ -113,6 +113,9 @@
     text-align: center;
     z-index: 1;
     transition: color .3s ease;
+    .fa {
+      font-size: 22px;
+    }
     &:hover {
       color: rgb(182, 182, 182);
     }

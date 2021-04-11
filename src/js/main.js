@@ -85,7 +85,7 @@ function toggleLightbox() {
 function changeItem() {
   let imgSrc = portfolioItems[count].querySelector('img').getAttribute('src');
   lightboxImg.src = imgSrc;
-  lightboxTitle.innerHTML = portfolioItems[count].querySelector('h4').innerHTML + ' - перейти на сайт';
+  lightboxTitle.innerHTML = portfolioItems[count].querySelector('h4').innerHTML + '&nbsp;&nbsp;&nbsp;<i class="fa fa-eye"></i>';
   lightboxTitle.href = portfolioItems[count].querySelector('a').getAttribute('href');
   lightboxDescription.innerHTML = portfolioItems[count].querySelector('p').innerHTML;
   lightboxCounter.innerHTML = `${count + 1} из ${portfolioItems.length}`;
@@ -206,11 +206,10 @@ selectLang.addEventListener('change', changeLang);
 
 function changeLang() {
   for (let key in langArr) {
-    let icon = document.querySelector('.lng-' + key).getAttribute('data-lang');
     if (selectLang.checked) {
-      document.querySelector('.lng-' + key).innerHTML = `<i class="fa fa-${icon}"></i> ${langArr[key]['en']}`;
+      document.querySelector('.lng-' + key).innerHTML = `${langArr[key]['en']}`;
     } else {
-      document.querySelector('.lng-' + key).innerHTML = `<i class="fa fa-${icon}"></i> ${langArr[key]['ru']}`;
+      document.querySelector('.lng-' + key).innerHTML = `${langArr[key]['ru']}`;
     }
   }
 }

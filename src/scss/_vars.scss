@@ -16,10 +16,15 @@ $orange: #9e7502;
 .main.dark h4,
 .main.dark h5,
 .main.dark .aside__item-link,
+.main.dark .aside__item-link + .fa,
 .main.dark .aside__logo-link,
 .main.dark .section-title,
 .main.dark .form__input-data label {
   color: #fff;
+}
+
+.main.dark .about__personal-item span {
+  color: #666;
 }
 .main.dark p,
 .main.dark p span,
@@ -66,9 +71,12 @@ body {
   }
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
+  .main.dark .aside__item-link:hover + .fa,
+  .main.dark .aside__item-link.active + .fa,
   .aside__item-link:hover,
   .aside__item-link.active,
-  .about__text-title span,
+  .aside__item-link:hover + .fa,
+  .aside__item-link.active + .fa,
   .portfolio__info-icon .fa,
   .contacts__info-icon .fa,
   .form__input-data input:focus ~ label,
@@ -110,9 +118,12 @@ body.green {
   }
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
+  .main.dark .aside__item-link:hover + .fa,
+  .main.dark .aside__item-link.active + .fa,
   .aside__item-link:hover,
   .aside__item-link.active,
-  .about__text-title span,
+  .aside__item-link:hover + .fa,
+  .aside__item-link.active + .fa,
   .portfolio__info-icon .fa,
   .contacts__info-icon .fa,
   .form__input-data input:focus ~ label,
@@ -122,7 +133,9 @@ body.green {
   .main.dark .form__input-data input:focus ~ label,
   .main.dark .form__textarea textarea:focus ~ label,
   .main.dark .form__input-data input:valid ~ label,
-  .main.dark .form__textarea textarea:valid ~ label {
+  .main.dark .form__textarea textarea:valid ~ label,
+  .toggle--text .toggle--btn:before,
+  .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $green;
   }
   .intro__social-link,
@@ -154,9 +167,12 @@ body.blue {
   }
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
+  .main.dark .aside__item-link:hover + .fa,
+  .main.dark .aside__item-link.active + .fa,
   .aside__item-link:hover,
   .aside__item-link.active,
-  .about__text-title span,
+  .aside__item-link:hover + .fa,
+  .aside__item-link.active + .fa,
   .portfolio__info-icon .fa,
   .contacts__info-icon .fa,
   .form__input-data input:focus ~ label,
@@ -166,7 +182,9 @@ body.blue {
   .main.dark .form__input-data input:focus ~ label,
   .main.dark .form__textarea textarea:focus ~ label,
   .main.dark .form__input-data input:valid ~ label,
-  .main.dark .form__textarea textarea:valid ~ label {
+  .main.dark .form__textarea textarea:valid ~ label,
+  .toggle--text .toggle--btn:before,
+  .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $blue;
   }
   .intro__social-link,
@@ -198,9 +216,12 @@ body.pink {
   }
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
+  .main.dark .aside__item-link:hover + .fa,
+  .main.dark .aside__item-link.active + .fa,
   .aside__item-link:hover,
   .aside__item-link.active,
-  .about__text-title span,
+  .aside__item-link:hover + .fa,
+  .aside__item-link.active + .fa,
   .portfolio__info-icon .fa,
   .contacts__info-icon .fa,
   .form__input-data input:focus ~ label,
@@ -210,7 +231,9 @@ body.pink {
   .main.dark .form__input-data input:focus ~ label,
   .main.dark .form__textarea textarea:focus ~ label,
   .main.dark .form__input-data input:valid ~ label,
-  .main.dark .form__textarea textarea:valid ~ label {
+  .main.dark .form__textarea textarea:valid ~ label,
+  .toggle--text .toggle--btn:before,
+  .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $pink;
   }
   .intro__social-link,
@@ -242,9 +265,12 @@ body.orange {
   }
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
+  .main.dark .aside__item-link:hover + .fa,
+  .main.dark .aside__item-link.active + .fa,
   .aside__item-link:hover,
   .aside__item-link.active,
-  .about__text-title span,
+  .aside__item-link:hover + .fa,
+  .aside__item-link.active + .fa,
   .portfolio__info-icon .fa,
   .contacts__info-icon .fa,
   .form__input-data input:focus ~ label,
@@ -254,7 +280,9 @@ body.orange {
   .main.dark .form__input-data input:focus ~ label,
   .main.dark .form__textarea textarea:focus ~ label,
   .main.dark .form__input-data input:valid ~ label,
-  .main.dark .form__textarea textarea:valid ~ label {
+  .main.dark .form__textarea textarea:valid ~ label,
+  .toggle--text .toggle--btn:before,
+  .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $orange;
   }
   .intro__social-link,
