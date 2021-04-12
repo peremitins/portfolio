@@ -303,7 +303,50 @@
           </div>
 
           <div class="row">
-            <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" class="form">
+            <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
+              <div class="bg-color bg-color-form"></div>
+              <div class="form-row">
+                <div class="input-data">
+                  <input id="name" name="name" type="text" required>
+                  <div class="underline">
+                  </div>
+                  <label for="name">Ваше Имя</label>
+                </div>
+                <div class="input-data">
+                  <input id="email" name="email" type="email" required>
+                  <div class="underline">
+                  </div>
+                  <label for="email">Ваш E-mail</label>
+                </div>
+                <div class="input-data">
+                  <input id="tel" name="tel" type="tel" required>
+                  <div class="underline">
+                  </div>
+                  <label for="tel">Ваш телефон</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="input-data textarea">
+                  <textarea id="message" name="text" rows="5"></textarea>
+                  <div class="underline">
+                  </div>
+                  <label for="message">Сообщение</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-photo-wrapper input-data">
+                  <div class="form-photo">Вы можете добавить фото своего питомца</div>
+                  <input class="form-photo-input" type="file" name="myfile[]" multiple id="myfile">
+                </div>
+              </div>
+              <div class="form-row submit-btn">
+                <div class="input-data">
+                  <div class="inner"></div>
+                  <input class="input-data-btn" type="submit" value="Отправить">
+                </div>
+              </div>
+            </form>
+            <!-- <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" class="form">
               <div class="form__row">
                 <div class="form__input-data">
                   <input type="text" name="name" required>
@@ -331,7 +374,7 @@
                   </div>
                 </div>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
       </section>
