@@ -88,6 +88,16 @@ const resources = () => {
     .pipe(dest('./app'))
 }
 
+const phpmailer = () => {
+  return src('./src/phpmailer/**')
+    .pipe(dest('./app/phpmailer'))
+}
+
+const phpfiles = () => {
+  return src('./src/*.php')
+    .pipe(dest('./app'))
+}
+
 const images = () => {
   return src([
 		'./src/img/**.jpg',
@@ -176,7 +186,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, resources, images, imagesSvg, svgSprites, watchFiles);
 
-exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, imagesSvg, svgSprites, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, phpmailer, phpfiles, images, imagesSvg, svgSprites, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 
