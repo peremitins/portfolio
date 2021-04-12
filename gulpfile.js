@@ -98,6 +98,11 @@ const phpfiles = () => {
     .pipe(dest('./app'))
 }
 
+const robortxt = () => {
+  return src('./*.txt')
+    .pipe(dest('./app'))
+}
+
 const images = () => {
   return src([
 		'./src/img/**.jpg',
@@ -186,7 +191,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, resources, images, imagesSvg, svgSprites, watchFiles);
 
-exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, phpmailer, phpfiles, images, imagesSvg, svgSprites, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, phpmailer, phpfiles, robortxt, images, imagesSvg, svgSprites, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 
