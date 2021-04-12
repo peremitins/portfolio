@@ -32,7 +32,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'acmkolyanp@gmail.com'; // Логин на почте
-    $mail->Password   = 'milankolyan0607'; // Пароль на почте
+    $mail->Password   = 'kkmcognotqoapehg'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('acmkolyanp@gmail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
@@ -59,7 +59,7 @@ $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body;    
 
-// Проверяем отправленность сообщения
+// Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
