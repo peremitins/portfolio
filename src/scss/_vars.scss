@@ -19,7 +19,8 @@ $orange: #9e7502;
 .main.dark .aside__item-link + .fa,
 .main.dark .aside__logo-link,
 .main.dark .section-title,
-.main.dark .form__input-data label {
+.main.dark .form__input-data label,
+.main.dark .form__input-data input, .main.dark .form__textarea textarea {
   color: #fff;
 }
 

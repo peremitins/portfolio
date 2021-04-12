@@ -58,7 +58,7 @@
         <div class="container">
           <div class="home__intro">
             <div class="home__image-wrapper">
-              <img class="home__image shadow-dark" src="img/profile.jpg" alt="profile">
+              <img class="home__image shadow-dark" loading="lazy" src="img/profile.jpg" alt="profile">
             </div>
             <h1 class="home__title lng-name">Николай Перемитин</h1>
             <p class="home__description lng-position">Веб-разработчик</p>
@@ -185,7 +185,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/dp.jpg" alt="portfolio">
+                  <img src="img/porfolio/dp.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">DP</h4>
@@ -200,7 +200,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/landbox.jpg" alt="portfolio">
+                  <img src="img/porfolio/landbox.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Landbox</h4>
@@ -215,7 +215,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/groom.jpg" alt="portfolio">
+                  <img src="img/porfolio/groom.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Groom</h4>
@@ -231,7 +231,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/tasty.jpg" alt="portfolio">
+                  <img src="img/porfolio/tasty.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Tasty</h4>
@@ -246,7 +246,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/voyager.jpg" alt="portfolio">
+                  <img src="img/porfolio/voyager.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">Voyager</h4>
@@ -261,7 +261,7 @@
             <div class="portfolio__item">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
-                  <img src="img/porfolio/find.jpg" alt="portfolio">
+                  <img src="img/porfolio/find.jpg" loading="lazy" alt="portfolio">
                 </div>
                 <div class="portfolio__info">
                   <h4 class="portfolio__info-title">FindFace</h4>
@@ -303,56 +303,13 @@
           </div>
 
           <div class="row">
-            <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
-              <div class="bg-color bg-color-form"></div>
-              <div class="form-row">
-                <div class="input-data">
-                  <input id="name" name="name" type="text" required>
-                  <div class="underline">
-                  </div>
-                  <label for="name">Ваше Имя</label>
-                </div>
-                <div class="input-data">
-                  <input id="email" name="email" type="email" required>
-                  <div class="underline">
-                  </div>
-                  <label for="email">Ваш E-mail</label>
-                </div>
-                <div class="input-data">
-                  <input id="tel" name="tel" type="tel" required>
-                  <div class="underline">
-                  </div>
-                  <label for="tel">Ваш телефон</label>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="input-data textarea">
-                  <textarea id="message" name="text" rows="5"></textarea>
-                  <div class="underline">
-                  </div>
-                  <label for="message">Сообщение</label>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-photo-wrapper input-data">
-                  <div class="form-photo">Вы можете добавить фото своего питомца</div>
-                  <input class="form-photo-input" type="file" name="myfile[]" multiple id="myfile">
-                </div>
-              </div>
-              <div class="form-row submit-btn">
-                <div class="input-data">
-                  <div class="inner"></div>
-                  <input class="input-data-btn" type="submit" value="Отправить">
-                </div>
-              </div>
-            </form>
-            <!-- <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" class="form">
+            <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" class="form">
               <div class="form__row">
                 <div class="form__input-data">
                   <input type="text" name="name" required>
                   <div class="form__underline">
                   </div>
-                  <label class="lng-about-data-contacts-name" for="">Имя</label>
+                  <label class="lng-about-data-contacts-name">Имя</label>
                 </div>
               </div>
               <div class="form__row">
@@ -360,7 +317,7 @@
                   <input type="text" name="email" required>
                   <div class="form__underline">
                   </div>
-                  <label for="">Email</label>
+                  <label>Email</label>
                 </div>
               </div>
               <div class="form__row">
@@ -368,13 +325,13 @@
                   <textarea rows="8" cols="80" name="text" required></textarea>
                   <div class="form__underline">
                   </div>
-                  <label class="lng-about-data-contacts-message" for="">Ваше сообщение</label>
+                  <label class="lng-about-data-contacts-message">Ваше сообщение</label>
                   <div class="buttons">
-                    <a href="#/" type="submit" class="buttons__btn lng-about-data-contacts-btn">Отправить</a>
+                      <button type="submit" class="buttons__btn lng-about-data-contacts-btn">Отправить</button>
                   </div>
                 </div>
               </div>
-            </form> -->
+            </form>
           </div>
         </div>
       </section>
@@ -389,8 +346,8 @@
         <li class="color__theme theme-pink" onclick="changeTheme('pink')"></li>
         <li class="color__theme theme-orange" onclick="changeTheme('orange')"></li>
         <li class="color__theme color__theme-dark">
-          <img src="img/moon.svg" alt="moon">
-          <img src="img/sun.svg" alt="sun">
+          <img src="img/moon.svg" loading="lazy" alt="moon">
+          <img src="img/sun.svg" loading="lazy" alt="sun">
         </li>
       </ul>
     </div>
@@ -401,8 +358,8 @@
   <!-- Lightbox -->
   <div class="lightbox">
     <div class="lightbox__content">
-      <div class="lightbox__close">&times</div>
-      <img src="img/porfolio/tasty.jpg" alt="" class="lightbox__img">
+      <div class="lightbox__close">&times;</div>
+      <img src="img/porfolio/tasty.jpg" loading="lazy" alt="tasty" class="lightbox__img">
       <div class="lightbox__caption">
         <div class="lightbox__text">
           <a href="" class="lightbox__title" target="_blank"></a>
