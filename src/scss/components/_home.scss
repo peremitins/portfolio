@@ -46,10 +46,15 @@
     border-radius: 50%;
     text-decoration: none;
     will-change: transform;
-  	backface-visibility: hidden;
-    transition: all .3s ease;
+    backface-visibility: hidden;
+    transition: all 0.3s ease;
     &:hover {
       transform: scale(1.1);
+    }
+    svg {
+      fill: #fff;
+      width: 19px;
+      height: 19px;
     }
   }
 }

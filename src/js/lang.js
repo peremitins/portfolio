@@ -5,7 +5,7 @@ const langArr = {
   },
   "menu-about": {
     "ru": "Обо Мне",
-    "en": "About"
+    "en": "About Me"
   },
   "menu-portfolio": {
     "ru": "Портфолио",
@@ -28,8 +28,8 @@ const langArr = {
     "en": "About"
   },
   "about-description": {
-    "ru": "В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится творить, создавать и видеть результат прямо сейчас! В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным!",
-    "en": "In 2019, I decided to change my field of activity and began to actively study what I liked and enjoyed a lot from childhood, namely FrontEnd development. I love to create, create and see the result right now! In my work, I pay special attention to details, meet deadlines and do everything to make the customer satisfied!"
+    "ru": "В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится создавать и видеть результат прямо сейчас! В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Мне нравится развиваться в этом направлении, каждый день получая новые знания и навыки.",
+    "en": "In 2019, I decided to change my field of activity and began to actively study something that I liked and enjoyed great since childhood, namely FrontEnd development. I love creating and seeing the result right now! In my work, I pay special attention to details, meet deadlines and do everything to make the customer satisfied! I am purposeful and always bring the work started to the end. I like to develop in this direction, gaining new knowledge and skills every day."
   },
   "about-data-birth": {
     "ru": "Дата рождения:",
@@ -81,7 +81,7 @@ const langArr = {
   },
   "about-data-fast-description": {
     "ru": "Моя первоочередная задача - сделать быструю загрузку веб-сайта и мгновенное взаимодействие с контентом.",
-    "en": "My first priority is to make the website load quickly and interact with the content instantly."
+    "en": "Fast load times and lag free interaction, my highest priority."
   },
   "about-data-responsive": {
     "ru": "Отзывчивый / адаптивный",
@@ -89,7 +89,7 @@ const langArr = {
   },
   "about-data-responsive-description": {
     "ru": "Мои веб-сайты будут работать на любом устройстве, любой диагонали.",
-    "en": "My websites will work on any device, any diagonal."
+    "en": "My layouts will work on any device, big or small."
   },
   "about-data-animated": {
     "ru": "Анимированный",
@@ -97,35 +97,35 @@ const langArr = {
   },
   "about-data-animated-description": {
     "ru": "Веб-сайты не обязательно должны быть статичными, я смогу оживить любую страницу.",
-    "en": "Websites don't have to be static, I can animate any page."
+    "en": "Websites don't have to be static, I love making pages come to life."
   },
   "about-data-portfolio": {
     "ru": "Портфолио",
     "en": "Portfolio"
   },
   "about-data-portfolio-1": {
-    "ru": "Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100.",
-    "en": "Layout of the landing page using HTML, CSS / SASS, Javascript, BEM. Despite the use of complex, effective animation and videophone, the site loads as quickly as possible. Google PageSpeed ​​score - 100."
+    "ru": "Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100. Заказ с фриланс биржы.",
+    "en": "Layout of the landing page using HTML, CSS / SASS, Javascript, BEM. Despite the use of complex, effective animation and videophone, the site loads as quickly as possible. Google PageSpeed ​​score - 100. Order with freelance."
   },
   "about-data-portfolio-2": {
-    "ru": "Верстка лендинга с использованием HTML, CSS/SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Сложная верстка с использованием большого количества svg-элементов. Зеленая зона Google PageSpeed.",
-    "en": "Layout of the landing page using HTML, CSS / SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Complex layout using a large number of svg elements. Green Zone Google PageSpeed."
+    "ru": "Верстка лендинга с использованием HTML, CSS/SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Сложная верстка с использованием большого количества svg-элементов. Зеленая зона Google PageSpeed. Заказ с фриланс биржы.",
+    "en": "Layout of the landing page using HTML, CSS / SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Complex layout using a large number of svg elements. Green Zone Google PageSpeed. Order with freelance."
   },
   "about-data-portfolio-3": {
-    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
-    "en": "Layout of the landing page using HTML, SASS, Javascript, PHP. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
+    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed. Заказ с фриланс биржы.",
+    "en": "Layout of the landing page using HTML, SASS, Javascript, PHP. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed. Order with freelance."
   },
   "about-data-portfolio-4": {
-    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления.",
-    "en": "Layout of the landing page using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed ​​with the ability to change the theme."
+    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления. Макет с интернета.",
+    "en": "Layout of the landing page using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed ​​with the ability to change the theme. Layout from the internet."
   },
   "about-data-portfolio-5": {
-    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. Легкий и быстрый сайт c приятной анимацией. Зеленая зона Google PageSpeed.",
-    "en": "Layout of the landing page using HTML, SASS, Javascript. Lightweight and fast site with nice animation. Green Zone Google PageSpeed."
+    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. Легкий и быстрый сайт c приятной анимацией. Зеленая зона Google PageSpeed. Макет с интернета.",
+    "en": "Layout of the landing page using HTML, SASS, Javascript. Lightweight and fast site with nice animation. Green Zone Google PageSpeed. Layout from the internet."
   },
   "about-data-portfolio-6": {
-    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
-    "en": "Layout of the landing page using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
+    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed. Заказ с фриланс биржы.",
+    "en": "Layout of the landing page using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed. Order with freelance."
   },
   "about-data-contacts": {
     "ru": "Контакты",
