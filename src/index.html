@@ -306,7 +306,7 @@
             <form id="form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" class="form">
               <div class="form__row">
                 <div class="form__input-data">
-                  <input type="text" required>
+                  <input type="text" name="name" required>
                   <div class="form__underline">
                   </div>
                   <label class="lng-about-data-contacts-name" for="">Имя</label>
@@ -314,7 +314,7 @@
               </div>
               <div class="form__row">
                 <div class="form__input-data">
-                  <input type="text" required>
+                  <input type="text" name="email" required>
                   <div class="form__underline">
                   </div>
                   <label for="">Email</label>
@@ -322,12 +322,12 @@
               </div>
               <div class="form__row">
                 <div class="form__input-data form__textarea">
-                  <textarea rows="8" cols="80" required></textarea>
+                  <textarea rows="8" cols="80" name="text" required></textarea>
                   <div class="form__underline">
                   </div>
                   <label class="lng-about-data-contacts-message" for="">Ваше сообщение</label>
                   <div class="buttons">
-                    <a href="#/" class="buttons__btn lng-about-data-contacts-btn">Отправить</a>
+                    <a href="#/" type="submit" class="buttons__btn lng-about-data-contacts-btn">Отправить</a>
                   </div>
                 </div>
               </div>
