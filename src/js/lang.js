@@ -28,8 +28,8 @@ const langArr = {
     "en": "About"
   },
   "about-description": {
-    "ru": "В 2019 году я решил сменить сферу деятельности и начал активно изучать то, что мне с самого детства нравилось и доставляло огромное удовольствие, а именно - FrontEnd разработку. Мне нравится создавать и видеть результат прямо сейчас! В работе особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Мне нравится развиваться в этом направлении, каждый день получая новые знания и навыки.",
-    "en": "In 2019, I decided to change my field of activity and began to actively study something that I liked and enjoyed great since childhood, namely FrontEnd development. I love creating and seeing the result right now! In my work, I pay special attention to details, meet deadlines and do everything to make the customer satisfied! I am purposeful and always bring the work started to the end. I like to develop in this direction, gaining new knowledge and skills every day."
+    "ru": "Здравствуйте! Если Вам нужно создать Landing Page или многостраничный сайт, то я Вам помогу! Я специализируюсь на Front-end разработке. При создании SPA или PWA приложений использую фреймфорк VueJS. В верстке использую сборку Gulp, препроцессор SCSS, Perfect Pixel для быстрой и качественной работы. Особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Вы можете связаться со мной любым удобным способом!",
+    "en": "Hello! If you need to create a landing page or multi-page site, then I will help you! I am specialized in Front-end development. When creating SPA or PWA applications, I use the VueJS framework. In the layout I use the Gulp assembly, SCSS preprocessor, Perfect Pixel for fast and high-quality work. I pay special attention to details, meet deadlines and do everything to make the customer satisfied! I am purposeful and always bring the work started to the end. You can contact me via message!"
   },
   "about-data-birth": {
     "ru": "Дата рождения:",
