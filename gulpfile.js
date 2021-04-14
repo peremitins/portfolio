@@ -99,7 +99,7 @@ const phpfiles = () => {
 }
 
 const robortxt = () => {
-  return src('./*.txt')
+  return src(['./.htaccess', './*.txt'])
     .pipe(dest('./app'))
 }
 
