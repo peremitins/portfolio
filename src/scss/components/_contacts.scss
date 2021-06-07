@@ -3,6 +3,10 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
     text-align: center;
+    transition: opacity .3s ease;
+    &:hover {
+      opacity: .7;
+    }
   }
   &__info-icon {
     display: inline-block;
