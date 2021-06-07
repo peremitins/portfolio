@@ -46,6 +46,10 @@
           <i class="fa fa-briefcase"></i>
         </li>
         <li class="aside__item">
+          <a href="#cv" class="aside__item-link lng-menu-cv">Резюме</a>
+          <i class="fa fa-file"></i>
+        </li>
+        <li class="aside__item">
           <a href="#contacts" class="aside__item-link lng-menu-contacts">Контакты</a>
           <i class="fa fa-comments"></i>
         </li>
@@ -54,7 +58,7 @@
         &copy; WebDev "Idea", 2021
       </div>
     </div>
-    <div class="main__content">
+    <main class="main__content">
       <section class="home section active" id="home">
         <div class="container">
           <div class="home__intro">
@@ -97,7 +101,7 @@
             <div class="about__content padd-15">
               <div class="row">
                 <div class="about__text padd-15">
-                  <p class="about__text-description lng-about-description">Здравствуйте! Если Вам нужно создать Landing Page или многостраничный сайт, то я Вам помогу! Я специализируюсь на Front-end разработке. При создании SPA или PWA приложений использую фреймфорк VueJS. В верстке использую сборку Gulp, препроцессор SCSS, Perfect Pixel для быстрой и качественной работы. Особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Вы можете связаться со мной любым удобным способом!</p>
+                  <p class="about__text-description lng-about-description">Здравствуйте! Если Вам нужно создать Landing Page или многостраничный сайт, то я Вам помогу! Я специализируюсь на Front-end разработке. При создании SPA или PWA приложений использую фреймфорк Vue.js. В верстке использую сборку Gulp, препроцессор SCSS, Perfect Pixel для быстрой и качественной работы. Особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Вы можете связаться со мной любым удобным способом!</p>
                 </div>
               </div>
               <div class="row">
@@ -187,8 +191,30 @@
               <h2 class="lng-about-data-portfolio">Портфолио</h2>
             </div>
           </div>
+          <div class="row">
+            <div class="portfolio__filter padd-15">
+              <button type="button" class="active lng-portfolio-filter-all" data-filter="all">Все</button>
+              <button type="button" class="lng-portfolio-filter-layout" data-filter="layout">Верстка</button>
+              <button type="button" class="lng-portfolio-filter-vue" data-filter="vue">Vue.js</button>
+            </div>
+          </div>
           <div class="portfolio__items center">
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/twitch.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-Twitch</h4>
+                  <p class="portfolio__info-description lng-portfolio-twitch">Приложение с использованием Twitch API. В проекте используется HTML, CSS/SASS, Javascript, Vuejs, VueRouter, Git, БЭМ. Приложение позволяет выбирать трансляции по играм или стримерам.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/vue-twitch/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/dp.jpg" loading="lazy" alt="portfolio">
@@ -203,7 +229,7 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/dp/app/" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/ucheba.jpg" loading="lazy" alt="portfolio">
@@ -218,7 +244,37 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://uchebagou.mcdir.ru/landing.html" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/vue-cart.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-Cart</h4>
+                  <p class="portfolio__info-description lng-portfolio-cart">Реализация корзины интернет-магазина. В проекте используется HTML, CSS/SASS, JS, Vuejs, Vuex, VueRouter, localStorage, Git.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/vue-shop-cart/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/weather.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-Weather</h4>
+                  <p class="portfolio__info-description lng-portfolio-weather">Приложение прогноза погоды с поиском по городу Использовал HTML, CSS, JS, Vue, Git.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/vue-weather/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/landbox.jpg" loading="lazy" alt="portfolio">
@@ -233,7 +289,52 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/landbox/app/" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/movie.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-Movie</h4>
+                  <p class="portfolio__info-description lng-portfolio-movie">Приложение, использующее API OMDb, представляет собой веб-службу RESTful для получения информации о фильмах. Используется HTML, CSS / SASS, JS, Vue3, VueRouter, Git.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/vue-videos/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/music.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-Music</h4>
+                  <p class="portfolio__info-description lng-portfolio-music">Приложение, использующее API OMDb, представляет собой веб-службу RESTful для получения информации о фильмах. Используется HTML, CSS / SASS, JS, Vue3, VueRouter, Git.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/vue-music/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="vue">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__img">
+                  <img src="img/porfolio/todo.jpg" loading="lazy" alt="portfolio">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__info-title">Vue-ToDo</h4>
+                  <p class="portfolio__info-description lng-portfolio-todo">Приложение список задач. Использовал HTML, CSS, JS, Vue, Git.</p>
+                  <div class="portfolio__info-icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/todo-list/" target="_blank"><i class="fa fa-eye"></i></a>
+            </div>
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/groom.jpg" loading="lazy" alt="portfolio">
@@ -249,7 +350,7 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/groom/app/" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/tasty.jpg" loading="lazy" alt="portfolio">
@@ -264,7 +365,7 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/tasty/dist/" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item" data-category="layout">
               <div class="portfolio__item-inner">
                 <div class="portfolio__img">
                   <img src="img/porfolio/voyager.jpg" loading="lazy" alt="portfolio">
@@ -279,6 +380,19 @@
               </div>
               <a class="portfolio__info-link lng-about-data-portfolio-go" href="https://allfreelance.github.io/voyager/" target="_blank"><i class="fa fa-eye"></i></a>
             </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="sv section" id="cv">
+        <div class="container">
+          <div class="row">
+            <div class="portfolio__title section-title padd-15">
+              <h2 class="lng-about-data-sv">Резюме</h2>
+            </div>
+          </div>
+          <div class="sv__content">
             
           </div>
         </div>
@@ -342,7 +456,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <!-- colorStyle -->
     <div class="color">
       <i class="fa fa-cog"></i>

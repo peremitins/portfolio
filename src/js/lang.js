@@ -11,6 +11,10 @@ const langArr = {
     "ru": "Портфолио",
     "en": "Portfolio"
   },
+  "menu-cv": {
+    "ru": "Резюме",
+    "en": "CV"
+  },
   "menu-contacts": {
     "ru": "Контакты",
     "en": "Contacts"
@@ -28,8 +32,8 @@ const langArr = {
     "en": "About"
   },
   "about-description": {
-    "ru": "Здравствуйте! Если Вам нужно создать Landing Page или многостраничный сайт, то я Вам помогу! Я специализируюсь на Front-end разработке. При создании SPA или PWA приложений использую фреймфорк VueJS. В верстке использую сборку Gulp, препроцессор SCSS, Perfect Pixel для быстрой и качественной работы. Особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Вы можете связаться со мной любым удобным способом!",
-    "en": "Hello! If you need to create a landing page or multi-page site, then I will help you! I am specialized in Front-end development. When creating SPA or PWA applications, I use the VueJS framework. In the layout I use the Gulp assembly, SCSS preprocessor, Perfect Pixel for fast and high-quality work. I pay special attention to details, meet deadlines and do everything to make the customer satisfied! I am purposeful and always bring the work started to the end. You can contact me via message!"
+    "ru": "Здравствуйте! Если Вам нужно создать Landing Page или многостраничный сайт, то я Вам помогу! Я специализируюсь на Front-end разработке. При создании SPA или PWA приложений использую фреймфорк Vue.js. В верстке использую сборку Gulp, препроцессор SCSS, Perfect Pixel для быстрой и качественной работы. Особое внимание уделяю деталям, соблюдаю сроки и делаю все, чтобы заказчик остался довольным! Я целеустремленный и всегда довожу начатое дело до конца. Вы можете связаться со мной любым удобным способом!",
+    "en": "Hello! If you need to create a landing page or multi-page site, then I will help you! I am specialized in Front-end development. When creating SPA or PWA applications, I use the Vue.js framework. In the layout I use the Gulp assembly, SCSS preprocessor, Perfect Pixel for fast and high-quality work. I pay special attention to details, meet deadlines and do everything to make the customer satisfied! I am purposeful and always bring the work started to the end. You can contact me via message!"
   },
   "about-data-birth": {
     "ru": "Дата рождения:",
@@ -103,6 +107,22 @@ const langArr = {
     "ru": "Портфолио",
     "en": "Portfolio"
   },
+  "about-data-sv": {
+    "ru": "Резюме",
+    "en": "CV"
+  },
+  "portfolio-filter-all": {
+    "ru": "Все",
+    "en": "All"
+  },
+  "portfolio-filter-layout": {
+    "ru": "Верстка",
+    "en": "Layout"
+  },
+  "portfolio-filter-vue": {
+    "ru": "Vue.js",
+    "en": "Vue.js"
+  },
   "about-data-portfolio-1": {
     "ru": "Верстка лендинга с использованием HTML, CSS/SASS, Javascript, БЭМ. Не смотря на использование сложной, эффектной анимации и видеофона, сайт загружается максимально быстро. Оценка Google PageSpeed - 100.",
     "en": "Layout of the landing page using HTML, CSS / SASS, Javascript, BEM. Despite the use of complex, effective animation and videophone, the site loads as quickly as possible. Google PageSpeed ​​score - 100."
@@ -126,6 +146,30 @@ const langArr = {
   "about-data-portfolio-6": {
     "ru": "Верстка многостраничного сайта с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
     "en": "Layout of a multi-page site using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
+  },
+  "portfolio-twitch": {
+    "ru": "Приложение с использованием Twitch API. В проекте используется HTML, CSS/SASS, Javascript, Vuejs, VueRouter, Git, БЭМ. Приложение позволяет выбирать трансляции по играм или стримерам.",
+    "en": "Application using the Twitch API. The project uses HTML, CSS / SASS, Javascript, Vuejs, VueRouter, Git, BEM. The application allows you to select broadcasts by game or streamer."
+  },
+  "portfolio-cart": {
+    "ru": "Реализация корзины интернет-магазина. В проекте используется HTML, CSS/SASS, JS, Vuejs, Vuex, VueRouter, localStorage, Git.",
+    "en": "Implementation of the shopping cart of an online store. The project uses HTML, CSS / SASS, JS, Vuejs, Vuex, VueRouter, localStorage, Git."
+  },
+  "portfolio-weather": {
+    "ru": "Приложение прогноза погоды с поиском по городу Использовал HTML, CSS, JS, Vue, Git.",
+    "en": "Weather forecast app with city search Used HTML, CSS, JS, Vue, Git."
+  },
+  "portfolio-movie": {
+    "ru": "Приложение, использующее API OMDb, представляет собой веб-службу RESTful для получения информации о фильмах. Используется HTML, CSS / SASS, JS, Vue3, VueRouter, Git.",
+    "en": "Application using the OMDb API is a RESTful web service to obtain movie information. Used HTML, CSS/SASS, JS, Vue3, VueRouter, Git."
+  },
+  "portfolio-music": {
+    "ru": "Музыкальный плеер. Использовал HTML, CSS, JS, Vue, Git.",
+    "en": "Music player App. Used HTML, CSS, JS, Vue, Git."
+  },
+  "portfolio-todo": {
+    "ru": "Приложение список задач. Использовал HTML, CSS, JS, Vue, Git.",
+    "en": "Todo App. Used HTML, CSS, JS, Vue, Git."
   },
   "about-data-contacts": {
     "ru": "Контакты",

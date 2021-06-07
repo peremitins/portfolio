@@ -132,3 +132,12 @@
     flex: 0 0 100%;
   }
 }
+
+@media (max-width: 370px) {
+  .aside__item-link {
+    font-size: 10px;
+  }
+  .aside__item {
+    width: 60px;
+  }
+}

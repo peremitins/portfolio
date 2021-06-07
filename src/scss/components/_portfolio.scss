@@ -2,6 +2,25 @@
   .container {
     padding-bottom: 40px;
   }
+  &__filter {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    button {
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin: 0 10px;
+      color: #302e4d;
+      cursor: pointer;
+      background-color: transparent;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      padding-bottom: 2px;
+      transition: all .3s ease;
+    }
+  }
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +42,23 @@
       transform: translateY(-50px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
     }
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: block;
+      animation: showItem .5s ease;
+    }
+    @keyframes showItem {
+      0% {
+        transform: scale(.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   }
   &__item-inner {
     overflow: hidden;
@@ -34,7 +70,7 @@
     bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
-    transition: all .4s ease;
+    transition: all .2s ease;
 	  backface-visibility: hidden;
     will-change: transform;
     z-index: 2;

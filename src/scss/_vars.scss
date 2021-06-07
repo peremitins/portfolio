@@ -11,6 +11,7 @@ $orange: #9e7502;
 .main.dark .aside {
   background-color: #222222;
 }
+.main.dark .portfolio__filter button,
 .main.dark h1,
 .main.dark h3,
 .main.dark h4,
@@ -70,6 +71,8 @@ body {
     border-bottom: 4px solid $red;
     border-right: 4px solid $red;
   }
+  .portfolio__filter button.active,
+  .portfolio__filter button:hover,
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
   .main.dark .aside__item-link:hover + .fa,
@@ -89,6 +92,7 @@ body {
   .main.dark .form__input-data input:valid ~ label,
   .main.dark .form__textarea textarea:valid ~ label {
     color: $red;
+    border-color: $red;
   }
   .intro__social-link,
   .section-title::before,
@@ -117,6 +121,8 @@ body.green {
     border-bottom: 4px solid $green;
     border-right: 4px solid $green;
   }
+  .portfolio__filter button.active,
+  .portfolio__filter button:hover,
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
   .main.dark .aside__item-link:hover + .fa,
@@ -138,6 +144,7 @@ body.green {
   .toggle--text .toggle--btn:before,
   .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $green;
+    border-color: $green;
   }
   .intro__social-link,
   .section-title::before,
@@ -166,6 +173,8 @@ body.blue {
     border-bottom: 4px solid $blue;
     border-right: 4px solid $blue;
   }
+  .portfolio__filter button.active,
+    .portfolio__filter button:hover,
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
   .main.dark .aside__item-link:hover + .fa,
@@ -187,6 +196,7 @@ body.blue {
   .toggle--text .toggle--btn:before,
   .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $blue;
+    border-color: $blue;
   }
   .intro__social-link,
   .section-title::before,
@@ -215,6 +225,8 @@ body.pink {
     border-bottom: 4px solid $pink;
     border-right: 4px solid $pink;
   }
+  .portfolio__filter button.active,
+    .portfolio__filter button:hover,
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
   .main.dark .aside__item-link:hover + .fa,
@@ -236,6 +248,7 @@ body.pink {
   .toggle--text .toggle--btn:before,
   .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $pink;
+    border-color: $pink;
   }
   .intro__social-link,
   .section-title::before,
@@ -264,6 +277,8 @@ body.orange {
     border-bottom: 4px solid $orange;
     border-right: 4px solid $orange;
   }
+  .portfolio__filter button.active,
+    .portfolio__filter button:hover,
   .main.dark .aside__item-link:hover,
   .main.dark .aside__item-link.active,
   .main.dark .aside__item-link:hover + .fa,
@@ -285,6 +300,7 @@ body.orange {
   .toggle--text .toggle--btn:before,
   .toggle--text .toggle--checkbox:checked + .toggle--btn:after {
     color: $orange;
+    border-color: $orange;
   }
   .intro__social-link,
   .section-title::before,
