@@ -40,6 +40,16 @@
   z-index: 2;
   animation: slideSection 1s ease;
 }
+.sv {
+  a {
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: color .3s ease;
+    &:hover {
+      color: rgb(126, 126, 126);
+    }
+  }
+}
 @keyframes slideSection {
   0% {
     transform: translateX(100%);

@@ -132,8 +132,8 @@ const langArr = {
     "en": "Layout of the landing page using HTML, CSS / SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Complex layout using a large number of svg elements. Green Zone Google PageSpeed."
   },
   "about-data-portfolio-3": {
-    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript, PHP. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
-    "en": "Layout of the landing page using HTML, SASS, Javascript, PHP. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
+    "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
+    "en": "Layout of the landing page using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
   },
   "about-data-portfolio-4": {
     "ru": "Верстка лендинга с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed с возможностью менять тему оформления.",
@@ -147,9 +147,9 @@ const langArr = {
     "ru": "Верстка многостраничного сайта с использованием HTML, SASS, Javascript. В работе применял БЭМ методологию, с соблюдением семантики. Легкий и быстрый сайт в зеленой зоне Google PageSpeed.",
     "en": "Layout of a multi-page site using HTML, SASS, Javascript. In my work, I used the BEM methodology, observing the semantics. Lightweight and fast site in the green zone of Google PageSpeed."
   },
-  "portfolio-twitch": {
-    "ru": "Приложение с использованием Twitch API. В проекте используется HTML, CSS/SASS, Javascript, Vuejs, VueRouter, Git, БЭМ. Приложение позволяет выбирать трансляции по играм или стримерам.",
-    "en": "Application using the Twitch API. The project uses HTML, CSS / SASS, Javascript, Vuejs, VueRouter, Git, BEM. The application allows you to select broadcasts by game or streamer."
+  "portfolio-my-todo": {
+    "ru": "Реализация списка задач путем добавления через Google Firestore. Используется HTML, CSS / SCSS, JS, Vuejs, VueRouter, Gulp, Git, Firestore.",
+    "en": "Implementing a todo list by adding via google Firestore. Used HTML, CSS/SCSS, JS, Vuejs, VueRouter, Gulp, Git, Firestore."
   },
   "portfolio-cart": {
     "ru": "Реализация корзины интернет-магазина. В проекте используется HTML, CSS/SASS, JS, Vuejs, Vuex, VueRouter, localStorage, Git.",
