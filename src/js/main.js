@@ -290,9 +290,6 @@ function moveMouse(e) {
 if (window.innerWidth >= 768) {
   document.addEventListener('mousemove', moveMouse);
 
-  // menuItem.addEventListener('mouseover', () => { mouse.classList.add('view-visible') });
-  // menuItem.addEventListener('mouseleave', () => { mouse.classList.remove('view-visible') });
-
   [...menuItem, toggle, themeBtn, ...buttons, ...links, ...textarea, ...inputs, lightboxPrev, lightboxNext, lightboxClose, ...filterPortfolioItems].forEach(link => link.addEventListener('mouseover', () => { mouse.classList.add('links-visible') }));
   [...menuItem, toggle, themeBtn, ...buttons, ...links, ...textarea, ...inputs, lightboxPrev, lightboxNext, lightboxClose, ...filterPortfolioItems].forEach(link => link.addEventListener('mouseleave', () => { mouse.classList.remove('links-visible') }));
 }
