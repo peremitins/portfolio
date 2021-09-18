@@ -268,3 +268,31 @@ function send(event, php) {
   req.onerror = function () { alert("Ошибка отправки запроса"); };
   req.send(new FormData(event.target));
 };
+
+//cursor
+const mouse = document.querySelector('.mouse');
+const buttons = document.getElementsByTagName('button');
+const inputs = document.getElementsByTagName('input');
+const textarea = document.getElementsByTagName('textarea');
+const links = document.getElementsByTagName('a');
+const toggle = document.querySelector('.toggle');
+const social = document.querySelectorAll('.home__social');
+
+function moveMouse(e) {
+  if (e.clientX < 5 || e.clientY < 5 || e.clientY > (window.innerHeight - 5) || e.clientX > (window.innerWidth - 5)) {
+    mouse.style.opacity = 0;
+  } else {
+    mouse.style.opacity = 1;
+    mouse.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+  }
+};
+
+if (window.innerWidth >= 768) {
+  document.addEventListener('mousemove', moveMouse);
+
+  // menuItem.addEventListener('mouseover', () => { mouse.classList.add('view-visible') });
+  // menuItem.addEventListener('mouseleave', () => { mouse.classList.remove('view-visible') });
+
+  [...menuItem, toggle, themeBtn, ...buttons, ...links, ...textarea, ...inputs, lightboxPrev, lightboxNext, lightboxClose, ...filterPortfolioItems].forEach(link => link.addEventListener('mouseover', () => { mouse.classList.add('links-visible') }));
+  [...menuItem, toggle, themeBtn, ...buttons, ...links, ...textarea, ...inputs, lightboxPrev, lightboxNext, lightboxClose, ...filterPortfolioItems].forEach(link => link.addEventListener('mouseleave', () => { mouse.classList.remove('links-visible') }));
+}
