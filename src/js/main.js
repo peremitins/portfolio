@@ -58,13 +58,13 @@ const filterContainer = document.querySelector('.portfolio__filter');
 const filterPortfolioItems = document.querySelectorAll('.portfolio__item');
 const filterBtns = filterContainer.children;
 
-for (let i = 0; i < filterBtns.length; i++) {
-  filterBtns[i].addEventListener('click', function() {
+for (let i = 0;i < filterBtns.length;i++) {
+  filterBtns[i].addEventListener('click', function () {
     filterContainer.querySelector('.active').classList.remove('active');
     this.classList.add('active');
-    
+
     const filterValue = this.getAttribute('data-filter');
-    for (let k = 0; k < filterPortfolioItems.length; k++) {
+    for (let k = 0;k < filterPortfolioItems.length;k++) {
       if (filterValue === filterPortfolioItems[k].getAttribute('data-category')) {
         filterPortfolioItems[k].classList.remove('hide');
         filterPortfolioItems[k].classList.add('show');
