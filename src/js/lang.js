@@ -167,9 +167,9 @@ const langArr = {
     "ru": "Музыкальный плеер. Использовал HTML, CSS, JS, Vue, Git.",
     "en": "Music player App. Used HTML, CSS, JS, Vue, Git."
   },
-  "portfolio-todo": {
-    "ru": "Приложение список задач. Использовал HTML, CSS, JS, Vue, Git.",
-    "en": "Todo App. Used HTML, CSS, JS, Vue, Git."
+  "portfolio-fireblogs": {
+    "ru": "Реализация приложения с возможностью добавления, удаления и редактирования сообщений. А также реализация личного кабинета и авторизации. Используется HTML, CSS / SCSS, JS, Vuejs, VueRouter, Vuex, Git, Firebase.",
+    "en": "Implementation of the application with the ability to add, delete and edit posts. As well as the implementation of a personal account and authorization. Used HTML, CSS/SCSS, JS, Vuejs, VueRouter, Vuex, Git, Firebase."
   },
   "about-data-contacts": {
     "ru": "Контакты",
