@@ -21,6 +21,7 @@ $orange: #9e7502;
 .main.dark .aside__logo-link,
 .main.dark .section-title,
 .main.dark .form__input-data label,
+.main.dark .sv a,
 .main.dark .form__input-data input, .main.dark .form__textarea textarea {
   color: #fff;
 }
@@ -30,6 +31,7 @@ $orange: #9e7502;
 }
 .main.dark p,
 .main.dark p span,
+.main.dark .sv a:hover,
 .main.dark .about__benefits-skills span {
   color: #e9e9e9;
 }
