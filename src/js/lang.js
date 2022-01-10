@@ -156,16 +156,16 @@ const langArr = {
     "en": "Implementation of the shopping cart of an online store. The project uses HTML, CSS / SASS, JS, Vuejs, Vuex, VueRouter, localStorage, Git."
   },
   "portfolio-weather": {
-    "ru": "Приложение прогноза погоды с поиском по городу Использовал HTML, CSS, JS, Vue, Git.",
-    "en": "Weather forecast app with city search Used HTML, CSS, JS, Vue, Git."
+    "ru": "Приложение прогноза погоды с графическим представлением и подробными данными. Используется HTML, CSS, JS, Vue, VueRouter, Git.",
+    "en": "Weather application with graphical presentation and data detail. Used HTML, CSS, JS, Vue, VueRouter, Git."
   },
   "portfolio-movie": {
     "ru": "Приложение, использующее API OMDb, представляет собой веб-службу RESTful для получения информации о фильмах. Используется HTML, CSS / SASS, JS, Vue3, VueRouter, Git.",
     "en": "Application using the OMDb API is a RESTful web service to obtain movie information. Used HTML, CSS/SASS, JS, Vue3, VueRouter, Git."
   },
   "portfolio-music": {
-    "ru": "Музыкальный плеер. Использовал HTML, CSS, JS, Vue, Git.",
-    "en": "Music player App. Used HTML, CSS, JS, Vue, Git."
+    "ru": "Реализация приложения с возможностью добавления, удаления и редактирования счетов. Используется HTML, CSS / SASS, JS, Vue3, VueRouter, VueX, Firebase, Git.",
+    "en": "Implementation of applications with the ability to add, remove and edit invoices. Used HTML, CSS / SASS, JS, Vue3, VueRouter, VueX, Firebase, Git."
   },
   "portfolio-fireblogs": {
     "ru": "Реализация приложения с возможностью добавления, удаления и редактирования сообщений. А также реализация личного кабинета и авторизации. Используется HTML, CSS / SCSS, JS, Vuejs, VueRouter, Vuex, Git, Firebase.",
