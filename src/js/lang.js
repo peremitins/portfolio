@@ -40,8 +40,8 @@ const langArr = {
     "en": "Date of birth:"
   },
   "about-data-birthday": {
-    "ru": "6 июля 1983",
-    "en": "July 6, 1983"
+    "ru": "6 июля",
+    "en": "July 6"
   },
   "about-data-tel": {
     "ru": "Тел :",
